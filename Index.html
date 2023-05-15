@@ -1,32 +1,38 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-      <link rel="stylesheet" href="background_styles.css">
-      <link rel="stylesheet" href="Index.css">
-      <script src="script.js" defer></script>
-      <title>Navbar</title>
-    </head>
+<head>
+ 
+  <link rel="stylesheet" href="index.css">
+  <script src="scripts/script.js"></script>
+  <script src="https://kit.fontawesome.com/7e0ca6b571.js" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.menu').toggleClass('active');
+    });
+});
+  </script>
+  <div class="toggle">
+    <a><i class="fa fa-bars"></i></a>
+  </div>
+  <div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+  </div>
 
-    <body>
-        <nav class="navbar">
-          <div class="brand-title">Silly Cycles</div>
-
-          
-          <div class="navbar-links">
-            <ul>
-              <li><a href="#">Hire</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-        </nav>
-        
-      </nav class="title">
-      <div class ="TITLEMIDDLE"> SILLY CYCLES</div>
-      <div class="about">
-
-      </div>
-
-      </body>
-  </html>
+  <div class="landing-image">
+    <div class="hero-text">
+      <h1>Cyclone Cycles</h1>
+    </div>
+  </div>
+  <div>
+    <h2>About Us</h2>
+  </div>
+</body>
+</html>
