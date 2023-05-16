@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<head>
+ 
+  <link rel="stylesheet" href="index.css">
+  <script src="scripts/script.js"></script>
+  <script src="https://kit.fontawesome.com/7e0ca6b571.js" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.menu').toggleClass('active');
+    });
+});
+
+let eArray = document.querySelectorAll(".about");
+console.log(eArray);
+window.addEventListener('scroll', fadeForward);
+function fadeForward() {
+  for (var i = 0; i < eArray.length; i++) {
+    var element = eArray[i]
+
+    if (distInView < 0) {
+            elem.classList.add("inView");
+        } else {
+            elem.classList.remove("inView");
+        }
+  }
+}
+  </script>
+  <div class="toggle">
+    <a><i class="fa fa-bars"></i></a>
+  </div>
+  <div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Hire a bike</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Login / Signup</a></li>
+    </ul>
+  </div>
+
+  <div class="landing-image">
+    
+      <h2>Cyclone Cycles</h2>
+    
+  </div>
+  <div class="img-about">
+    <div class="fade-in">
+      <h1> Who<br> are we?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo facilisis eros, nec finibus<br>
+         purus volutpat in. Phasellus vehicula viverra lobortis. Suspendisse potenti. Nullam in sagittis eros.<br>
+         Quisque ornare justo auctor dolor bibendum, ac interdum lectus ultrices. Maecenas sed dui lobortis,<br>
+      </p>
+     
+    </div>
+  </div>
+  <!-- About us -->
+  <!--  -->
+  <!-- Footer -->
+</body>
+</html>
+
