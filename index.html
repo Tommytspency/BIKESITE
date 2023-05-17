@@ -4,6 +4,8 @@
  
   <link rel="stylesheet" href="index.css">
   <script src="scripts/script.js"></script>
+  <script src="jquery-3.6.4.min.js"></script>
+
   <script src="https://kit.fontawesome.com/7e0ca6b571.js" crossorigin="anonymous"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
@@ -14,21 +16,6 @@
         $('.menu').toggleClass('active');
     });
 });
-
-let eArray = document.querySelectorAll(".about");
-console.log(eArray);
-window.addEventListener('scroll', fadeForward);
-function fadeForward() {
-  for (var i = 0; i < eArray.length; i++) {
-    var element = eArray[i]
-
-    if (distInView < 0) {
-            elem.classList.add("inView");
-        } else {
-            elem.classList.remove("inView");
-        }
-  }
-}
   </script>
   <div class="toggle">
     <a><i class="fa fa-bars"></i></a>
