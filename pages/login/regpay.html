@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/7e0ca6b571.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+        
+            <div class="svg-props">
+                <!--SVG copied from figma to create login box shapes-->
+                    <svg width="602" height="497" viewBox="0 0 602 497" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 23C2 11.9543 10.9543 3 22 3H316V68H2V23Z" fill="white"/>
+                        <path d="M600 22C600 10.9543 591.046 2 580 2H286V67H600V22Z" fill="#EEEEEE"/>
+                        <rect x="1.5" y="1.5" width="599" height="494" rx="18.5" fill="#58C0FB" stroke="black" stroke-width="3"/>
+                        <path d="M20 1.5H299.5V79.5H1.5V20C1.5 9.78273 9.78273 1.5 20 1.5Z" fill="#58C0FB" stroke="black" stroke-width="3"/>
+                        <path d="M582 1.5H299.5V79.5H600.5V20C600.5 9.78273 592.217 1.5 582 1.5Z" fill="#D9D9D9" stroke="black" stroke-width="3"/>
+                        </svg>
+
+                        <div class="fields">
+                            <form action="/action_page.php">
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname" value="John"><br>
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                                <input type="submit" value="Submit">
+                                <label for="fname">Passwo:</label><br>
+                                <input type="text" id="fname" name="fname" value="John"><br>
+                              </form> 
+                    </div>
+            </div>
+        </div>
+
+    </script>
+    <body>
+        <script>
+          $(document).ready(function(){
+          $('.toggle').click(function(){
+              $('.menu').toggleClass('active');
+          });
+      });
+      
+      let eArray = document.querySelectorAll(".about");
+      console.log(eArray);
+      window.addEventListener('scroll', fadeForward);
+      function fadeForward() {
+        for (var i = 0; i < eArray.length; i++) {
+          var element = eArray[i]
+      
+          if (distInView < 0) {
+                  elem.classList.add("inView");
+              } else {
+                  elem.classList.remove("inView");
+              }
+        }
+      }
+        </script>
+        <div class="toggle">
+          <a><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li> <a href="index.html" class="#"> Home </a></li>
+              <li> <a href="pages\login\regpay.html" class="#"> FAQ </a></li>
+              <li> <a href="pages\login\regpay.html" class="#"> Hire a bike </a></li>
+              <li> <a href="pages\login\regpay.html" class="#"> Login/signup </a></li>
+              
+          </ul>
+        </div>
+
+        
+</body>
+

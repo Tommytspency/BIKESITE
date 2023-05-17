@@ -60,7 +60,7 @@ ul li a:hover{
 .landing-image {
     width: auto;
     height: 900px;
-    background-image: url('images/landing-image.jpeg');
+    background-image: url('images\landing-image.jpeg');
     background-repeat: no-repeat;
     background-size: contain;
    
