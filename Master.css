@@ -1,0 +1,6 @@
+body{ /* fade ins are easier on the eyes when transitioning through pages, so have created one here*/
+    margin: 0;
+    padding: 0; 
+    background: #040404;
+    animation: fadeIn 5s;
+}
