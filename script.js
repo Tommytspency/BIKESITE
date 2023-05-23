@@ -1,4 +1,5 @@
 function displaySong1() {
-    var p = document.getElementById("paragraph");
-    p.style.display = "block";  	 
-  }
+  var p = document.getElementById("congratulations");
+  p.style.display = "block";  	 
+}
+
