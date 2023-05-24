@@ -69,8 +69,6 @@ ul li a:hover{
     background-size: contain;
     background-image: url("images/bikefronton.jpg");
     background-position: center;
-    align-content: center;
-   
 }
 h1 {
     text-align: center;
@@ -127,6 +125,7 @@ p {
 
 .img-about {
     background-image: url("images/Untitled-1.png");
+    align-content: center;
 }
    
 .inView {
