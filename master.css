@@ -64,7 +64,7 @@ ul li a:hover{
 .landing-image {
     width: auto;
     height: 900px;
-    background-image: url('images/landing-image.jpeg');
+    background-image: url("images\bikefronton.jpg");
     background-repeat: no-repeat;
     background-size: contain;
    
@@ -313,7 +313,7 @@ ul li a:hover{
 
 #congratulations
 {
-display:none;
+display:none; /*this hides the congrats text so that it is only shown when the sign up button is clicked*/
 }
    
 .button {
