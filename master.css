@@ -126,6 +126,7 @@ p {
 .img-about {
     background-image: url("images/Untitled-1.png");
     align-content: center;
+    background-position-x: center;
 }
    
 .inView {
