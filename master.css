@@ -116,6 +116,9 @@ h3 {
     padding-top: 250px;
     
 }
+h4 {
+  text-align: center;
+}
 p {
     color: white;
     text-align: center;
@@ -380,7 +383,7 @@ clearly see that they are about to click the button */
 }
 
 .grid-item{
-text-align: center;
+  text-align: center;
 
 }
 
