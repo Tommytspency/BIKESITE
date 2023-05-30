@@ -8,7 +8,11 @@
 
 </head>
 
-<!--hamburger menu-->
+<!--hamburger menu
+
+I have mostly learnt this from a prior website I designed and coded for my former band in 2018, but also borrowed
+code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay to add the "slide right" effect to the 
+hamburger menu.-->
 <script>
    
   $(document).ready(function(){
@@ -34,31 +38,68 @@
 
 <!--Page starts-->
 
+<!-- here I create a grid, which I learnt from Max Spencer (details at start of index)-->
+
+<!-- I have also created hover functions so the user can hover overtop of the bike to show the model, and an 
+alternate view of the bike. This ensures that the user get's a basic overview of what the bike is (for the average
+user to not overcomplicate it for them) and for people who want information on the model, the model is displayed 
+accordingly upon hover. This was learnt in the workshops, along with some general knowledge I have learnt from prior projects.-->
 <div class="grid-container">
   <div class="grid-item">
-    <img src="images\EBIKESIDE1.jpg.png" alt="err">
+    <img src="images\EBIKESIDE1.jpg" alt="err">
     <h4>Ebike</h4>
+    <div class="overlay">
+      <div class="text">Smartmotion X-Urban</div>
+      <img src="images\ebikeangle.jpg">
+      
+    </div>
   </div>
   <div class="grid-item">
     <img src="images\giantfullsusside.jpg" alt="err" >
     <h4>Full Suspension Mtn Bike</h4>
+    <div class="overlay">
+      <div class="text"> 2022 Giant Trance</div>
+      <img class="overlay" src="images\giantfullsusangle.jpg">
+        
+    </div>
   </div>
   <div class="grid-item">
-    <img src="images\GIANTBIKE.jpg" alt="err" >
+    <img src="images\gianthardtail.jpg" alt="err" >
     <h4>Road Bike</h4>
+    <div class="overlay">
+      <div class="text">2022 Giant Talon 4</div>
+      <img class="overlay" src="images\gianthardtailalt.jpg" alt="err">
+    </div>
+
   </div>  
   <div class="grid-item">
     <img src="images\GIANTBIKE.jpg" alt="err" >
     <h4>Roadbike</h4>
+    <div class="overlay">
+      <div class="text">2022 Giant Contend</div>
+      <img class="overlay" src="images\GIANTBIKEotherside.jpg" alt="err">
+    </div>
   </div>
+
+
   <div class="grid-item">
-    <img src="images\EBIKESIDE1.jpg.png" alt="err" >
-    <h4>Ebike</h4>
+    <img src="images\Escoot.jpg" alt="err" >
+    <h4>E-Scooter</h4>
+    <div class="overlay">
+      <div class="text">Segway Ninebot Max Pro</div>
+    </div>
   </div>
+
   <div class="grid-item">
-    <img src="images\EBIKESIDE1.jpg.png" alt="err" >
-    <h4>Ebikelol</h4>
+    <img src="images\MONSTERSCOOT.jpg" alt="err" >
+    <h4>Full Suspension Mtn Bike</h4>
+    <div class="overlay">
+      <div class="text">Kaabo Wolf King GT Pro 72V</div>
+      <img class="overlay" src="images\MONSTERSCOOTSIDE.jpg">
+        
+    </div>
   </div>
+  
 </div>
 
 </body>

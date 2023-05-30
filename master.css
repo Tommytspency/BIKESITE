@@ -28,6 +28,7 @@ body{ /* fade ins are easier on the eyes when transitioning through pages, so ha
     height: 100%;
     background: #FFF;
     z-index: 1;
+    position:static;
     transition: 0.5s;
 }
 ul{
@@ -117,7 +118,12 @@ h3 {
     
 }
 h4 {
+  /* brings below text to front and puts it in the centre of the grid column */
+  position: absolute;
   text-align: center;
+  position: static;
+  z-index: 1;
+  
 }
 p {
     color: white;
@@ -365,7 +371,6 @@ clearly see that they are about to click the button */
 .button:hover span:after {
   opacity: 1;
   right: 0;
-  
 }
 
 /*grid for bike*/
@@ -374,10 +379,10 @@ clearly see that they are about to click the button */
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 500px 405px;
   gap: 10px;
   background-color: #000000;
-  padding: 10px;
+  padding-left: 100px;
   color: #00affa;
   text-align: center;
 }
@@ -385,6 +390,55 @@ clearly see that they are about to click the button */
 .grid-item{
   text-align: center;
 
+}
+
+/* I have learnt this piece of code from W3 Schools 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade And I am using it to
+add a hover effect so people can get a basic idea of what the bike is upon first glance, then get the model when they 
+hover their mouse overtop */
+
+/*hover in services page, using the same hover skills from the workshop guides, and experimentation with
+*/
+
+
+.grid-item {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+position: relative;
 }
 
 
