@@ -3,6 +3,11 @@ function displaySong1() {
   p.style.display = "block";  	 
 }
 
+function displaySong2() {
+  var p = document.getElementById("hired");
+  p.style.display = "block";  	 
+}
+
 function validate_password() {
  
   var pass = document.getElementById('pass').value;
@@ -11,12 +16,14 @@ function validate_password() {
       document.getElementById('wrong_pass_alert').style.color = 'red';
       document.getElementById('wrong_pass_alert').innerHTML
           = 'Passwords do not match';
+
       
   } else {
       document.getElementById('wrong_pass_alert').style.color = 'green';
       document.getElementById('wrong_pass_alert').innerHTML =
           'Password Matched';
-      
+
+          
   }
 }
 
