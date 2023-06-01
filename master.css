@@ -400,6 +400,10 @@ ul li a:hover{
 display:none; /*this hides the congrats text so that it is only shown when the sign up button is clicked*/
 }
    
+#hired{
+display: none;
+
+}
 .button {
   border-radius: 4px;
   background-color: #005720;
