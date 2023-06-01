@@ -125,6 +125,33 @@ h4 {
   z-index: 1;
   
 }
+
+h5{
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    background-size: 500% auto;
+    animation: linear-gradient 10s ease-in-out infinite alternate;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    font-size: 75px;
+    padding-top: 50px;
+    
+
+
+}
 h6
 {color:#fff ;
   font-size: 50px;
@@ -133,10 +160,15 @@ text-align: center;
 padding-bottom: 0px;
 }
 
+.questions
+{
+text-align: center;
+max-width: 100%;
+}
+
 p {
     color: white;
     text-align: center;
-    padding-left: 110px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -421,14 +453,11 @@ clearly see that they are about to click the button */
   gap: 10px;
   background-color: #000000;
   padding-left: 100px;
+  padding-top: 100px;
   color: #00affa;
-  text-align: center;
 }
 
-.grid-item{
-  text-align: center;
 
-}
 
 /* I have learnt this piece of code from W3 Schools 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade And I am using it to

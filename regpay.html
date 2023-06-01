@@ -22,7 +22,7 @@
     <div class="menu">
       <ul>
           <li><a href="index.html" class="#">Home</a></li>
-          <li> <a href="index.html" class="#"> FAQ </a></li>
+          <li> <a href="faq.html" class="#"> FAQ </a></li>
           <li> <a href="services.html" class="#"> View our bikes </a></li>
           <li> <a href="regpay.html" class="#">Hire a bike</a></li>
       </ul>
@@ -68,27 +68,55 @@
             <input type="text" id="lname" name="lname"><br><br>
             <label for="addy">Address:</label>
             <input type="text" id="addy" name="addy"><br><br>
-            <label for="pword">Password:</label>
-            <input type="password" id="pword" name="pword"><br><br>
-            <label for="rpword">Repeat Password:</label>
-            <input type="password" id="rpword" name="rpword"><br><br>
-   
-              
-            
-              
-            
-            
-          </form>
-          <button class="button" onclick="displaySong1()"><span>Sign Up</span> </button>
-            <div id="congratulations">
-            Congratulations! you are now signed up
-            </div>
+            <div class="pass">
+
+            <input id="pass"
+                   type="password"
+                   name="pass"
+                   placeholder="Enter Password"
+                   >
+            <input id="confirm_pass"
+                   type="password"
+                   name="confirm_pass"
+                   placeholder="Confirm Password" 
+                   >
+
+        <span id="wrong_pass_alert"></span>
+        <div class="buttons">
+            <button
+                    class="submit_btn"
+                    onclick="validate_password()">
+                Submit
+            </button>
+        </div> 
+      </form>
         </div>
-        
+      
+
+</div>
         <div class="panel" id="three-panel">
           <div class="panel-title">Hire</div>
-          <p>chur mok</p>
+          <form action="/action_page.php">
+            <label for="cars">Choose a bike:</label>
+            <select name="bikes" id="bikes">
+              <option value="electric-bike">Electric bike</option>
+              <option value="hard-tail"> Hard Tail Mountain bike</option>
+              <option value="full-sus">Full Suspension Mountain bike</option>
+              <option value="road">Road Bike</option>
+              <option value="elec-scoot">Electric Scooter</option>
+              <option value="moster-scoot">Monster Scooter</option>
+            </select>
+            <br><br>
+            
+          </form>
+          <button class="button" onclick="displaySong1()"><span>Hire Now!</span> </button>
+            <div id="congratulations">
+            Logged in
+            </div>
+
+
         </div>
+        
         </div>
     </div>
 
