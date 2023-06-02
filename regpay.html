@@ -45,64 +45,104 @@
         <div class="panels">
         <div class="panel" id="one-panel">
           <div class="panel-title">Login</div>
-          <form class="forms" action="/action_page.php">
-
-            <!--input boxes for login page-->
-            <label for="fname">Email:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Password:</label>
-            <input type="text" id="lname" name="lname"><br><br>
+          <form class="forms" name="register" onsubmit="return validateForm()">
+            USERNAME: <input type="text" name="username"> <br>
+            PASSWORD: <input type="text" name="password"> <br>
+          
             
-          </form>
-          <button class="button" onclick="displaySong1()"><span>Login</span> </button>
+            <input class="button" type="submit" value="Submit">
             <div id="congratulations">
-            Logged in
-            </div>
+              Logged in
+              </div>
+            </form>
+         
+          </form>
         </div>
         
         <div class="panel" id="two-panel">
           <div class="panel-title">Sign Up</div>
           <form class="forms" action="/action_page.php">
-            <label for="fname">Full Name:</label>
+
+            Full Name:
+            <label for="fname"></label>
             <input type="text" id="fname" name="fname"><br><br>
-            <label for="email">Email:</label>
+            Email: <br>
+            <label for="email"></label>
             <input type="text" id="lname" name="lname"><br><br>
-            <label for="addy">Address:</label>
+            Address: <br>
+            <label for="addy"></label>
             <input type="text" id="addy" name="addy"><br><br>
-              
-         <label for="password">Password</label>
-           <input type="password" id="password" placeholder="Your Password">
-           <br>
-         <label for="cnfrm-password">Confirm Password</label>
+
+            Password: <br>
+         <label for="password"></label>
+           <input type="password" id="password" placeholder="Your Password"> <br>
+           
+           Confirm Password:
+         <label for="cnfrm-password"></label>
           <input type="password" id="cnfrm-password" placeholder="Confirm password">
                 <p id="message"></p>
-                <input type="button" onclick="checkPassword()" value="SUBMIT"/>
-         
-
+                <input class="button" type="button" onclick="checkPassword()" value="SAVE"/>
       </form>
         
       
 
 </div>
         <div class="panel" id="three-panel">
+
           <div class="panel-title">Hire</div>
-          <form action="/action_page.php">
-            <label for="cars">Choose a bike:</label>
-            <select name="bikes" id="bikes">
+
+          <form action="/action_page.php" class="forms">
+
+
+            <label> Choose a bike:</label> <br>
+            <select name="bikes" id="bikes" >
               <option value="electric-bike">Electric bike</option>
               <option value="hard-tail"> Hard Tail Mountain bike</option>
               <option value="full-sus">Full Suspension Mountain bike</option>
               <option value="road">Road Bike</option>
-              <option value="elec-scoot">Electric Scooter</option>
+              <option value="elecscoot" id="elecscoot">Electric Scooter</option>
               <option value="moster-scoot">Monster Scooter</option>
             </select>
+<br>
+            <label> Pickup Location:</label> <br>
+            <select name="location" id="location">
+              <option value="electric-bike">Makara Peak</option>
+              <option value="hard-tail"> Pohill Reserve</option>
+              <option value="full-sus">Hutt River Trail</option>
+            </select>
+<br>
+
+<label> Time:</label> <br>
+<select name="time" id="bikes">
+            <option value="full-sus">Half Day (9am-1pm)</option>
+            <option value="full-sus">Half Day (1pm-6pm)</option>
+            <option value="full-sus">Full day</option>
+          </select>
+<br>
+<label> Day:</label> <br>
+            <select name="day" id="day">
+              <label for="cars">Day:</label>
+            <option value="mon">Monday</option>
+            <option value="tues">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thurs">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+            <option value="sun">Sunday</option>
+            <select name="bikes" id="bikes">
+            </select>
+            
+            <p id="message2"></p>
+            <input class="button" type="button" onclick="checkbiketype()" value="SUBMIT"/>
+            
+            
             <br><br>
             
+            
           </form>
-          <button class="button" onclick="displaySong2()" value="SUBMIT"><span>Hire Now!</span> </button>
-            <div id="hired">
-            Congratulations! Your bike will be ready to pick up on location
-            </div>
+        </div>
+          
+            
 
 
         </div>
@@ -112,9 +152,13 @@
 
     
 
-    
-  </head>
-  <body>
+    <div class = "socmed">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  <a href="https://twitter.com/" class="fa fa-twitter"></a>
+    </div>
+ 
+  
     
 </body>
 </html>
