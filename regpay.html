@@ -45,7 +45,7 @@
         <div class="panels">
         <div class="panel" id="one-panel">
           <div class="panel-title">Login</div>
-          <form action="/action_page.php">
+          <form class="forms" action="/action_page.php">
 
             <!--input boxes for login page-->
             <label for="fname">Email:</label>
@@ -59,38 +59,28 @@
             Logged in
             </div>
         </div>
+        
         <div class="panel" id="two-panel">
           <div class="panel-title">Sign Up</div>
-          <form action="/action_page.php">
+          <form class="forms" action="/action_page.php">
             <label for="fname">Full Name:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="email">Email:</label>
             <input type="text" id="lname" name="lname"><br><br>
             <label for="addy">Address:</label>
             <input type="text" id="addy" name="addy"><br><br>
-            <div class="pass">
+              
+         <label for="password">Password</label>
+           <input type="password" id="password" placeholder="Your Password">
+           <br>
+         <label for="cnfrm-password">Confirm Password</label>
+          <input type="password" id="cnfrm-password" placeholder="Confirm password">
+                <p id="message"></p>
+                <input type="button" onclick="checkPassword()" value="SUBMIT"/>
+         
 
-            <input id="pass"
-                   type="password"
-                   name="pass"
-                   placeholder="Enter Password"
-                   >
-            <input id="confirm_pass"
-                   type="password"
-                   name="confirm_pass"
-                   placeholder="Confirm Password" 
-                   >
-
-        <span id="wrong_pass_alert"></span>
-        <div class="buttons">
-            <button
-                    class="submit_btn"
-                    onclick="validate_password()">
-                Submit
-            </button>
-        </div> 
       </form>
-        </div>
+        
       
 
 </div>
@@ -109,7 +99,7 @@
             <br><br>
             
           </form>
-          <button class="button" onclick="displaySong2()"><span>Hire Now!</span> </button>
+          <button class="button" onclick="displaySong2()" value="SUBMIT"><span>Hire Now!</span> </button>
             <div id="hired">
             Congratulations! Your bike will be ready to pick up on location
             </div>

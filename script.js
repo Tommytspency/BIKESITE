@@ -8,22 +8,25 @@ function displaySong2() {
   p.style.display = "block";  	 
 }
 
-function validate_password() {
- 
-  var pass = document.getElementById('pass').value;
-  var confirm_pass = document.getElementById('confirm_pass').value;
-  if (pass != confirm_pass) {
-      document.getElementById('wrong_pass_alert').style.color = 'red';
-      document.getElementById('wrong_pass_alert').innerHTML
-          = 'Passwords do not match';
+function checkPassword(){
+  let password = document.getElementById("password").value;
+  let cnfrmPassword = document.getElementById("cnfrm-password").value;
+  let message = document.getElementById("message");
+  console.log(" Password:", password,'\n',"Confirm Password:",cnfrmPassword);
 
-      
-  } else {
-      document.getElementById('wrong_pass_alert').style.color = 'green';
-      document.getElementById('wrong_pass_alert').innerHTML =
-          'Password Matched';
-
-          
+  if(password.length != 0){
+      if(password == cnfrmPassword){
+          message.textContent = "Wow, Passwords match";
+          message.style.backgroundColor = "#1dcd59";
+      }
+      else{
+          message.textContent = "Sorry, Password don't match";
+          message.style.backgroundColor = "#ff4d4d";
+      }
+  }
+  else{
+      alert("Password can't be empty!");
+      message.textContent = "";
   }
 }
 
